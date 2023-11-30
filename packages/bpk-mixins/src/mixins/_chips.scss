@@ -15,6 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '../bonds.scss';
+@import 'borders.scss';
+@import 'margins.scss';
+@import 'shadows.scss';
+@import 'utils.scss';
 
 @mixin bpk-chip {
   display: inline-flex;

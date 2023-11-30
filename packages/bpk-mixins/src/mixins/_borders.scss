@@ -264,3 +264,19 @@
 @mixin bpk-border-left-xl($color, $inset: inset) {
   @include _bpk-border-left($bpk-border-size-xl, $color, $inset);
 }
+
+@mixin bpk-datatable-border-left($bpk-border-size-datatable) {
+  @include _bpk-border-left(
+    $bpk-border-size-datatable,
+    $bpk-core-accent-day,
+    inset
+  );
+}
+
+@mixin bpk-datatable-border-right($bpk-border-size-datatable) {
+  @include _bpk-border-right(
+    $bpk-border-size-datatable,
+    $bpk-core-accent-day,
+    inset
+  );
+}

@@ -19,6 +19,7 @@
 @import '../bonds.scss';
 @import 'radii.scss';
 @import 'shadows.scss';
+@import 'utils.scss';
 
 ////
 /// @group layers
@@ -87,18 +88,18 @@
   height: $arrow-size;
 
   &::before {
-    top: -($arrow-size + $bpk-one-pixel-rem);
-    margin-left: -$bpk-one-pixel-rem;
+    top: -1 * ($arrow-size + $bpk-one-pixel-rem);
+    margin-left: -1 * $bpk-one-pixel-rem;
     border-bottom-color: $border-color;
 
     @include bpk-rtl {
-      margin-right: -$bpk-one-pixel-rem;
+      margin-right: -1 * $bpk-one-pixel-rem;
       margin-left: 0;
     }
   }
 
   &::after {
-    top: -$arrow-size + $bpk-one-pixel-rem;
+    top: -1 * $arrow-size + $bpk-one-pixel-rem;
     border-bottom-color: $arrow-color;
   }
 }
@@ -121,13 +122,13 @@
   height: ($arrow-size * 2);
 
   &::before {
-    right: -($arrow-size + $bpk-one-pixel-rem);
-    margin-top: -$bpk-one-pixel-rem;
+    right: -1 * ($arrow-size + $bpk-one-pixel-rem);
+    margin-top: -1 * $bpk-one-pixel-rem;
     border-left-color: $border-color;
   }
 
   &::after {
-    right: -$arrow-size + $bpk-one-pixel-rem;
+    right: -1 * $arrow-size + $bpk-one-pixel-rem;
     border-left-color: $arrow-color;
   }
 }
@@ -150,18 +151,18 @@
   height: $arrow-size;
 
   &::before {
-    bottom: -($arrow-size + $bpk-one-pixel-rem);
-    margin-left: -$bpk-one-pixel-rem;
+    bottom: -1 * ($arrow-size + $bpk-one-pixel-rem);
+    margin-left: -1 * $bpk-one-pixel-rem;
     border-top-color: $border-color;
 
     @include bpk-rtl {
-      margin-right: -$bpk-one-pixel-rem;
+      margin-right: -1 * $bpk-one-pixel-rem;
       margin-left: 0;
     }
   }
 
   &::after {
-    bottom: -$arrow-size + $bpk-one-pixel-rem;
+    bottom: -1 * $arrow-size + $bpk-one-pixel-rem;
     border-top-color: $arrow-color;
   }
 }
@@ -184,13 +185,13 @@
   height: ($arrow-size * 2);
 
   &::before {
-    left: -($arrow-size + $bpk-one-pixel-rem);
-    margin-top: -$bpk-one-pixel-rem;
+    left: -1 * ($arrow-size + $bpk-one-pixel-rem);
+    margin-top: -1 * $bpk-one-pixel-rem;
     border-right-color: $border-color;
   }
 
   &::after {
-    left: -$arrow-size + $bpk-one-pixel-rem;
+    left: -1 * $arrow-size + $bpk-one-pixel-rem;
     border-right-color: $arrow-color;
   }
 }

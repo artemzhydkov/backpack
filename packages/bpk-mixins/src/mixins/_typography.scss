@@ -17,7 +17,9 @@
  */
 
 @import '../bonds.scss';
-@import './borders.scss';
+@import 'borders.scss';
+@import 'radii.scss';
+@import 'utils.scss';
 
 ////
 /// @group typography
