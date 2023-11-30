@@ -19,7 +19,7 @@
 // Disable unit-disallowed-list in this file as we don't want icon markers to scale on maps
 
 /* stylelint-disable unit-disallowed-list */
-@import '../../bpk-mixins/index.scss';
+@import '../../bpk-mixins-next';
 
 .bpk-icon-marker {
   $marker-width: 26px;
