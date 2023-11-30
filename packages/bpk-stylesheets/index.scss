@@ -16,8 +16,9 @@
  * limitations under the License.
  */
 
-@import '~normalize.css';
-@import '../bpk-mixins-next';
+@use '../bpk-mixins-next' as *;
+
+@import '../node_modules/normalize.css/normalize.css';
 
 // stylelint-disable-next-line selector-max-type
 html {
