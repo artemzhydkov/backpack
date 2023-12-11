@@ -42,14 +42,14 @@ body {
   font-family: bonds.$bpk-font-family-base;
   font-size: bonds.$bpk-font-size-base;
   line-height: 1.3rem; /* stylelint-disable-line scale-unlimited/declaration-strict-value */
+}
 
-  :global(&.scaffold-font-size) {
-    font-size: 13px; /* stylelint-disable-line unit-disallowed-list, scale-unlimited/declaration-strict-value */
-  }
+:global(body.scaffold-font-size) {
+  font-size: 13px; /* stylelint-disable-line unit-disallowed-list, scale-unlimited/declaration-strict-value */
+}
 
-  :global(&.enable-font-smoothing) {
-    -webkit-font-smoothing: antialiased;
-  }
+:global(body.enable-font-smoothing) {
+  -webkit-font-smoothing: antialiased;
 }
 
 :focus-visible {
