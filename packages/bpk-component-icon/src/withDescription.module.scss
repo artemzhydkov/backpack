@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@use '../../bpk-mixins-next/src/mixins/utils';
+@use '../../bpk-mixins-next/utils';
 
 .bpk-icon-description {
   @include utils.bpk-visually-hidden;
