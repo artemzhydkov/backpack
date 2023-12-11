@@ -16,7 +16,8 @@
  * limitations under the License.
  */
 
-@use '../../bpk-mixins-next' as mixins;
+@use '../../bpk-mixins-next/src/bonds';
+@use '../../bpk-mixins-next/src/mixins/radii';
 
 @mixin bpk-image__spinner {
   position: absolute;
@@ -27,12 +28,12 @@
   transform: translate(-50%, -50%);
 
   &--hidden {
-    transition: opacity mixins.$bpk-duration-base ease-in-out;
+    transition: opacity bonds.$bpk-duration-base ease-in-out;
     opacity: 0;
   }
 
   &--shown {
-    transition: opacity mixins.$bpk-duration-base ease-in-out;
+    transition: opacity bonds.$bpk-duration-base ease-in-out;
     opacity: 1;
   }
 }
@@ -45,7 +46,7 @@
   left: 0;
   display: block;
   width: 100%;
-  transition: opacity mixins.$bpk-duration-base ease-in-out;
+  transition: opacity bonds.$bpk-duration-base ease-in-out;
 
   &--hidden {
     opacity: 0;
@@ -60,10 +61,10 @@
   position: relative;
   display: block;
   max-width: 100%;
-  transition: background-color mixins.$bpk-duration-base ease-in-out;
-  background-color: mixins.$bpk-surface-highlight-day;
+  transition: background-color bonds.$bpk-duration-base ease-in-out;
+  background-color: bonds.$bpk-surface-highlight-day;
   overflow: hidden;
-  transition-delay: mixins.$bpk-duration-base;
+  transition-delay: bonds.$bpk-duration-base;
 }
 
 .bpk-image {
@@ -84,6 +85,6 @@
   }
 
   &--border-radius-sm {
-    @include mixins.bpk-border-radius-sm;
+    @include radii.bpk-border-radius-sm;
   }
 }

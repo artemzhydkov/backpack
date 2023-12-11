@@ -16,20 +16,19 @@
  * limitations under the License.
  */
 
-@use '../../bpk-mixins-next' as mixins;
-@use 'BpkImage.module.scss';
+@use 'BpkImage.module' as *;
 
 .bpk-background-image {
-  @include BpkImage.bpk-image;
+  @include bpk-image;
 
   &__spinner {
-    @include BpkImage.bpk-image__spinner;
+    @include bpk-image__spinner;
   }
 
   &__img {
     opacity: 0;
 
-    @include BpkImage.bpk-image__img;
+    @include bpk-image__img;
 
     &--shown {
       opacity: 1;
@@ -41,6 +40,6 @@
   }
 
   &--no-background {
-    @include BpkImage.bpk-image--no-background;
+    @include bpk-image--no-background;
   }
 }
